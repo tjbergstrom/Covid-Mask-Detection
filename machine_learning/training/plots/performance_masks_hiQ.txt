@@ -1,0 +1,1073 @@
+build: 1601662742.3506033 97.2912%
+model: Quick_Net, epochs: 1, optimzer: Adam3, augmentation: default
+image size: 48, batch size: 32, kernel size: 3, dataset size: 2211
+run time: 31.01s, plots/plot.png
+notes: dry run to make sure it works 
+
+              precision    recall  f1-score   support
+
+        mask       0.98      0.97      0.97       209
+without_mask       0.97      0.98      0.97       234
+
+    accuracy                           0.97       443
+   macro avg       0.97      0.97      0.97       443
+weighted avg       0.97      0.97      0.97       443
+
+[[202   7]
+ [  5 229]]
+
+
+build: 1601662876.1698267 95.9368%
+model: Quick_Net, epochs: 1, optimzer: Adam3, augmentation: default
+image size: 48, batch size: 32, kernel size: 3, dataset size: 2211
+run time: 30.46s, plots/plot.png
+notes: another dry run 
+
+              precision    recall  f1-score   support
+
+        mask       0.95      0.97      0.96       209
+without_mask       0.97      0.95      0.96       234
+
+    accuracy                           0.96       443
+   macro avg       0.96      0.96      0.96       443
+weighted avg       0.96      0.96      0.96       443
+
+[[202   7]
+ [ 11 223]]
+
+
+
+
+** Beginning auto_train.sh on Sat Oct  3 08:37:10 AKDT 2020
+
+build: 1601743033.701913 98.1941%
+model: Quick_Net, epochs: 20, optimzer: Adam2, augmentation: default
+image size: 32, batch size: 24, kernel size: 3, dataset size: 2211
+run time: 240.05s, plots/plot0.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.98      0.98      0.98       209
+without_mask       0.98      0.98      0.98       234
+
+    accuracy                           0.98       443
+   macro avg       0.98      0.98      0.98       443
+weighted avg       0.98      0.98      0.98       443
+
+[[205   4]
+ [  4 230]]
+
+
+build: 1601743279.6652641 97.9684%
+model: Quick_Net, epochs: 40, optimzer: Adam2, augmentation: default
+image size: 32, batch size: 24, kernel size: 3, dataset size: 2211
+run time: 622.10s, plots/plot1.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.98      0.98      0.98       209
+without_mask       0.98      0.98      0.98       234
+
+    accuracy                           0.98       443
+   macro avg       0.98      0.98      0.98       443
+weighted avg       0.98      0.98      0.98       443
+
+[[205   4]
+ [  5 229]]
+
+
+build: 1601743908.5098903 97.7427%
+model: Quick_Net, epochs: 20, optimzer: Adam2, augmentation: default
+image size: 32, batch size: 32, kernel size: 3, dataset size: 2211
+run time: 265.83s, plots/plot2.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.99      0.96      0.98       209
+without_mask       0.97      0.99      0.98       234
+
+    accuracy                           0.98       443
+   macro avg       0.98      0.98      0.98       443
+weighted avg       0.98      0.98      0.98       443
+
+[[201   8]
+ [  2 232]]
+
+
+build: 1601744181.0051136 98.4199%
+model: Quick_Net, epochs: 40, optimzer: Adam2, augmentation: default
+image size: 32, batch size: 32, kernel size: 3, dataset size: 2211
+run time: 566.04s, plots/plot3.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.99      0.98      0.98       209
+without_mask       0.98      0.99      0.99       234
+
+    accuracy                           0.98       443
+   macro avg       0.98      0.98      0.98       443
+weighted avg       0.98      0.98      0.98       443
+
+[[205   4]
+ [  3 231]]
+
+
+build: 1601744753.7384455 98.6456%
+model: Quick_Net, epochs: 20, optimzer: Adam2, augmentation: default
+image size: 32, batch size: 42, kernel size: 3, dataset size: 2211
+run time: 236.01s, plots/plot4.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.99      0.99      0.99       209
+without_mask       0.99      0.99      0.99       234
+
+    accuracy                           0.99       443
+   macro avg       0.99      0.99      0.99       443
+weighted avg       0.99      0.99      0.99       443
+
+[[206   3]
+ [  3 231]]
+
+
+build: 1601744994.605755 98.1941%
+model: Quick_Net, epochs: 40, optimzer: Adam2, augmentation: default
+image size: 32, batch size: 42, kernel size: 3, dataset size: 2211
+run time: 462.20s, plots/plot5.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.98      0.98      0.98       209
+without_mask       0.98      0.98      0.98       234
+
+    accuracy                           0.98       443
+   macro avg       0.98      0.98      0.98       443
+weighted avg       0.98      0.98      0.98       443
+
+[[205   4]
+ [  4 230]]
+
+
+build: 1601745462.0722597 98.1941%
+model: Quick_Net, epochs: 20, optimzer: Adam2, augmentation: default
+image size: 32, batch size: 64, kernel size: 3, dataset size: 2211
+run time: 205.71s, plots/plot6.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.98      0.98      0.98       209
+without_mask       0.98      0.98      0.98       234
+
+    accuracy                           0.98       443
+   macro avg       0.98      0.98      0.98       443
+weighted avg       0.98      0.98      0.98       443
+
+[[205   4]
+ [  4 230]]
+
+
+build: 1601745822.4993224 98.1941%
+model: Quick_Net, epochs: 20, optimzer: Adam2, augmentation: default
+image size: 48, batch size: 24, kernel size: 3, dataset size: 2211
+run time: 668.91s, plots/plot8.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.98      0.98      0.98       209
+without_mask       0.98      0.98      0.98       234
+
+    accuracy                           0.98       443
+   macro avg       0.98      0.98      0.98       443
+weighted avg       0.98      0.98      0.98       443
+
+[[205   4]
+ [  4 230]]
+
+
+build: 1601746499.40645 98.1941%
+model: Quick_Net, epochs: 40, optimzer: Adam2, augmentation: default
+image size: 48, batch size: 24, kernel size: 3, dataset size: 2211
+run time: 1239.38s, plots/plot9.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.98      0.99      0.98       209
+without_mask       0.99      0.98      0.98       234
+
+    accuracy                           0.98       443
+   macro avg       0.98      0.98      0.98       443
+weighted avg       0.98      0.98      0.98       443
+
+[[206   3]
+ [  5 229]]
+
+
+build: 1601747746.1853065 98.4199%
+model: Quick_Net, epochs: 20, optimzer: Adam2, augmentation: default
+image size: 48, batch size: 32, kernel size: 3, dataset size: 2211
+run time: 537.23s, plots/plot10.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.99      0.98      0.98       209
+without_mask       0.98      0.99      0.99       234
+
+    accuracy                           0.98       443
+   macro avg       0.98      0.98      0.98       443
+weighted avg       0.98      0.98      0.98       443
+
+[[205   4]
+ [  3 231]]
+
+
+build: 1601748290.519293 98.4199%
+model: Quick_Net, epochs: 40, optimzer: Adam2, augmentation: default
+image size: 48, batch size: 32, kernel size: 3, dataset size: 2211
+run time: 993.69s, plots/plot11.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.98      0.99      0.98       209
+without_mask       0.99      0.98      0.99       234
+
+    accuracy                           0.98       443
+   macro avg       0.98      0.98      0.98       443
+weighted avg       0.98      0.98      0.98       443
+
+[[206   3]
+ [  4 230]]
+
+
+build: 1601749291.4553015 98.8713%
+model: Quick_Net, epochs: 20, optimzer: Adam2, augmentation: default
+image size: 48, batch size: 42, kernel size: 3, dataset size: 2211
+run time: 511.66s, plots/plot12.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       1.00      0.98      0.99       209
+without_mask       0.98      1.00      0.99       234
+
+    accuracy                           0.99       443
+   macro avg       0.99      0.99      0.99       443
+weighted avg       0.99      0.99      0.99       443
+
+[[205   4]
+ [  1 233]]
+
+
+build: 1601749810.0010722 98.8713%
+model: Quick_Net, epochs: 40, optimzer: Adam2, augmentation: default
+image size: 48, batch size: 42, kernel size: 3, dataset size: 2211
+run time: 886.23s, plots/plot13.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.99      0.99      0.99       209
+without_mask       0.99      0.99      0.99       234
+
+    accuracy                           0.99       443
+   macro avg       0.99      0.99      0.99       443
+weighted avg       0.99      0.99      0.99       443
+
+[[206   3]
+ [  2 232]]
+
+
+build: 1601750701.5714176 98.8713%
+model: Quick_Net, epochs: 20, optimzer: Adam2, augmentation: default
+image size: 48, batch size: 64, kernel size: 3, dataset size: 2211
+run time: 406.37s, plots/plot14.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.99      0.99      0.99       209
+without_mask       0.99      0.99      0.99       234
+
+    accuracy                           0.99       443
+   macro avg       0.99      0.99      0.99       443
+weighted avg       0.99      0.99      0.99       443
+
+[[206   3]
+ [  2 232]]
+
+
+build: 1601751113.2464283 98.4199%
+model: Quick_Net, epochs: 40, optimzer: Adam2, augmentation: default
+image size: 48, batch size: 64, kernel size: 3, dataset size: 2211
+run time: 792.61s, plots/plot15.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.99      0.98      0.98       209
+without_mask       0.98      0.99      0.99       234
+
+    accuracy                           0.98       443
+   macro avg       0.98      0.98      0.98       443
+weighted avg       0.98      0.98      0.98       443
+
+[[205   4]
+ [  3 231]]
+
+
+Finished auto_train.sh
+1601750701.5714176 98.8713%
+1601749810.0010722 98.8713%
+1601749291.4553015 98.8713%
+1601744753.7384455 98.6456%
+1601751113.2464283 98.4199%
+
+
+
+
+** Beginning auto_train.sh on Sat Oct  3 11:18:36 AKDT 2020
+
+build: 1601752720.161231 98.4199%
+model: Full_Net, epochs: 20, optimzer: Adam3, augmentation: default
+image size: 32, batch size: 24, kernel size: 3, dataset size: 2211
+run time: 296.93s, plots/plot0.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.99      0.98      0.98       209
+without_mask       0.98      0.99      0.99       234
+
+    accuracy                           0.98       443
+   macro avg       0.98      0.98      0.98       443
+weighted avg       0.98      0.98      0.98       443
+
+[[205   4]
+ [  3 231]]
+
+
+build: 1601753021.9810376 98.8713%
+model: Full_Net, epochs: 40, optimzer: Adam3, augmentation: default
+image size: 32, batch size: 24, kernel size: 3, dataset size: 2211
+run time: 589.54s, plots/plot1.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       1.00      0.98      0.99       209
+without_mask       0.98      1.00      0.99       234
+
+    accuracy                           0.99       443
+   macro avg       0.99      0.99      0.99       443
+weighted avg       0.99      0.99      0.99       443
+
+[[205   4]
+ [  1 233]]
+
+
+build: 1601753616.7035422 98.6456%
+model: Full_Net, epochs: 20, optimzer: Adam3, augmentation: default
+image size: 32, batch size: 32, kernel size: 3, dataset size: 2211
+run time: 306.20s, plots/plot2.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.99      0.98      0.99       209
+without_mask       0.98      0.99      0.99       234
+
+    accuracy                           0.99       443
+   macro avg       0.99      0.99      0.99       443
+weighted avg       0.99      0.99      0.99       443
+
+[[205   4]
+ [  2 232]]
+
+
+build: 1601753927.9208827 99.3228%
+model: Full_Net, epochs: 40, optimzer: Adam3, augmentation: default
+image size: 32, batch size: 32, kernel size: 3, dataset size: 2211
+run time: 577.67s, plots/plot3.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       1.00      0.99      0.99       209
+without_mask       0.99      1.00      0.99       234
+
+    accuracy                           0.99       443
+   macro avg       0.99      0.99      0.99       443
+weighted avg       0.99      0.99      0.99       443
+
+[[207   2]
+ [  1 233]]
+
+
+build: 1601754510.6551526 97.7427%
+model: Full_Net, epochs: 20, optimzer: Adam3, augmentation: default
+image size: 32, batch size: 42, kernel size: 3, dataset size: 2211
+run time: 276.73s, plots/plot4.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       1.00      0.96      0.98       209
+without_mask       0.96      1.00      0.98       234
+
+    accuracy                           0.98       443
+   macro avg       0.98      0.98      0.98       443
+weighted avg       0.98      0.98      0.98       443
+
+[[200   9]
+ [  1 233]]
+
+
+build: 1601754792.4007285 98.4199%
+model: Full_Net, epochs: 40, optimzer: Adam3, augmentation: default
+image size: 32, batch size: 42, kernel size: 3, dataset size: 2211
+run time: 549.21s, plots/plot5.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.99      0.98      0.98       209
+without_mask       0.98      0.99      0.99       234
+
+    accuracy                           0.98       443
+   macro avg       0.98      0.98      0.98       443
+weighted avg       0.98      0.98      0.98       443
+
+[[204   5]
+ [  2 232]]
+
+
+build: 1601755346.6408105 97.7427%
+model: Full_Net, epochs: 20, optimzer: Adam3, augmentation: default
+image size: 32, batch size: 64, kernel size: 3, dataset size: 2211
+run time: 274.22s, plots/plot6.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       1.00      0.96      0.98       209
+without_mask       0.96      1.00      0.98       234
+
+    accuracy                           0.98       443
+   macro avg       0.98      0.98      0.98       443
+weighted avg       0.98      0.98      0.98       443
+
+[[200   9]
+ [  1 233]]
+
+
+build: 1601755626.053826 98.4199%
+model: Full_Net, epochs: 40, optimzer: Adam3, augmentation: default
+image size: 32, batch size: 64, kernel size: 3, dataset size: 2211
+run time: 541.63s, plots/plot7.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.98      0.99      0.98       209
+without_mask       0.99      0.98      0.99       234
+
+    accuracy                           0.98       443
+   macro avg       0.98      0.98      0.98       443
+weighted avg       0.98      0.98      0.98       443
+
+[[206   3]
+ [  4 230]]
+
+
+build: 1601756172.6243122 97.0655%
+model: Full_Net, epochs: 20, optimzer: Adam3, augmentation: default
+image size: 48, batch size: 24, kernel size: 3, dataset size: 2211
+run time: 611.69s, plots/plot8.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.99      0.94      0.97       209
+without_mask       0.95      1.00      0.97       234
+
+    accuracy                           0.97       443
+   macro avg       0.97      0.97      0.97       443
+weighted avg       0.97      0.97      0.97       443
+
+[[197  12]
+ [  1 233]]
+
+
+build: 1601756793.5705445 97.9684%
+model: Full_Net, epochs: 40, optimzer: Adam3, augmentation: default
+image size: 48, batch size: 24, kernel size: 3, dataset size: 2211
+run time: 1246.92s, plots/plot9.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.99      0.97      0.98       209
+without_mask       0.97      0.99      0.98       234
+
+    accuracy                           0.98       443
+   macro avg       0.98      0.98      0.98       443
+weighted avg       0.98      0.98      0.98       443
+
+[[203   6]
+ [  3 231]]
+
+
+build: 1601758047.9201217 99.0971%
+model: Full_Net, epochs: 20, optimzer: Adam3, augmentation: default
+image size: 48, batch size: 32, kernel size: 3, dataset size: 2211
+run time: 623.69s, plots/plot10.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.99      0.99      0.99       209
+without_mask       0.99      0.99      0.99       234
+
+    accuracy                           0.99       443
+   macro avg       0.99      0.99      0.99       443
+weighted avg       0.99      0.99      0.99       443
+
+[[207   2]
+ [  2 232]]
+
+
+build: 1601758678.9461498 99.0971%
+model: Full_Net, epochs: 40, optimzer: Adam3, augmentation: default
+image size: 48, batch size: 32, kernel size: 3, dataset size: 2211
+run time: 1222.36s, plots/plot11.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       1.00      0.99      0.99       209
+without_mask       0.99      1.00      0.99       234
+
+    accuracy                           0.99       443
+   macro avg       0.99      0.99      0.99       443
+weighted avg       0.99      0.99      0.99       443
+
+[[206   3]
+ [  1 233]]
+
+
+build: 1601759907.5886838 98.1941%
+model: Full_Net, epochs: 20, optimzer: Adam3, augmentation: default
+image size: 48, batch size: 42, kernel size: 3, dataset size: 2211
+run time: 572.67s, plots/plot12.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.99      0.97      0.98       209
+without_mask       0.97      0.99      0.98       234
+
+    accuracy                           0.98       443
+   macro avg       0.98      0.98      0.98       443
+weighted avg       0.98      0.98      0.98       443
+
+[[203   6]
+ [  2 232]]
+
+
+build: 1601760486.5239177 98.8713%
+model: Full_Net, epochs: 40, optimzer: Adam3, augmentation: default
+image size: 48, batch size: 42, kernel size: 3, dataset size: 2211
+run time: 1096.41s, plots/plot13.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.99      0.99      0.99       209
+without_mask       0.99      0.99      0.99       234
+
+    accuracy                           0.99       443
+   macro avg       0.99      0.99      0.99       443
+weighted avg       0.99      0.99      0.99       443
+
+[[206   3]
+ [  2 232]]
+
+
+build: 1601761589.0496085 98.6456%
+model: Full_Net, epochs: 20, optimzer: Adam3, augmentation: default
+image size: 48, batch size: 64, kernel size: 3, dataset size: 2211
+run time: 539.61s, plots/plot14.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.99      0.99      0.99       209
+without_mask       0.99      0.99      0.99       234
+
+    accuracy                           0.99       443
+   macro avg       0.99      0.99      0.99       443
+weighted avg       0.99      0.99      0.99       443
+
+[[206   3]
+ [  3 231]]
+
+
+build: 1601762134.7448742 99.0971%
+model: Full_Net, epochs: 40, optimzer: Adam3, augmentation: default
+image size: 48, batch size: 64, kernel size: 3, dataset size: 2211
+run time: 1074.13s, plots/plot15.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.99      1.00      0.99       209
+without_mask       1.00      0.99      0.99       234
+
+    accuracy                           0.99       443
+   macro avg       0.99      0.99      0.99       443
+weighted avg       0.99      0.99      0.99       443
+
+[[208   1]
+ [  3 231]]
+
+
+Finished auto_train.sh
+1601753927.9208827 99.3228%
+1601762134.7448742 99.0971%
+1601758678.9461498 99.0971%
+1601758047.9201217 99.0971%
+1601760486.5239177 98.8713%
+
+
+build: 1601769692.064509 97.9684%
+model: Quick_Net, epochs: 50, optimzer: Adam3, augmentation: default
+image size: 48, batch size: 24, kernel size: 3, dataset size: 2211
+run time: 1088.16s, plots/plot.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.96      1.00      0.98       209
+without_mask       1.00      0.97      0.98       234
+
+    accuracy                           0.98       443
+   macro avg       0.98      0.98      0.98       443
+weighted avg       0.98      0.98      0.98       443
+
+[[208   1]
+ [  8 226]]
+
+
+build: 1601770992.8685806 98.6456%
+model: Quick_Net, epochs: 50, optimzer: Adam1, augmentation: default
+image size: 32, batch size: 32, kernel size: 3, dataset size: 2211
+run time: 503.21s, plots/plot0.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.98      0.99      0.99       209
+without_mask       0.99      0.98      0.99       234
+
+    accuracy                           0.99       443
+   macro avg       0.99      0.99      0.99       443
+weighted avg       0.99      0.99      0.99       443
+
+[[207   2]
+ [  4 230]]
+
+
+build: 1601772858.1544533 98.8713%
+model: Full_Net, epochs: 50, optimzer: Adam3, augmentation: default
+image size: 48, batch size: 16, kernel size: 3, dataset size: 2211
+run time: 1485.91s, plots/plot1.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       1.00      0.98      0.99       209
+without_mask       0.98      1.00      0.99       234
+
+    accuracy                           0.99       443
+   macro avg       0.99      0.99      0.99       443
+weighted avg       0.99      0.99      0.99       443
+
+[[205   4]
+ [  1 233]]
+
+
+build: 1601774448.8240387 98.4199%
+model: Full_Net, epochs: 50, optimzer: Adam3, augmentation: default
+image size: 32, batch size: 32, kernel size: 3, dataset size: 2211
+run time: 679.92s, plots/plot2.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.99      0.98      0.98       209
+without_mask       0.98      0.99      0.99       234
+
+    accuracy                           0.98       443
+   macro avg       0.98      0.98      0.98       443
+weighted avg       0.98      0.98      0.98       443
+
+[[204   5]
+ [  2 232]]
+
+
+build: 1601775214.1845 98.6456%
+model: Full_Net, epochs: 55, optimzer: Adam3, augmentation: default
+image size: 48, batch size: 32, kernel size: 3, dataset size: 2211
+run time: 1523.57s, plots/plot3.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.99      0.98      0.99       209
+without_mask       0.98      0.99      0.99       234
+
+    accuracy                           0.99       443
+   macro avg       0.99      0.99      0.99       443
+weighted avg       0.99      0.99      0.99       443
+
+[[205   4]
+ [  2 232]]
+
+
+build: 1601776855.886738 98.4199%
+model: Full_Net, epochs: 55, optimzer: Adam3, augmentation: default
+image size: 48, batch size: 64, kernel size: 3, dataset size: 2211
+run time: 1456.09s, plots/plot4.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       1.00      0.97      0.98       209
+without_mask       0.97      1.00      0.99       234
+
+    accuracy                           0.98       443
+   macro avg       0.98      0.98      0.98       443
+weighted avg       0.98      0.98      0.98       443
+
+[[203   6]
+ [  1 233]]
+
+
+build: 1601778358.3062415 98.6456%
+model: Full_Net, epochs: 70, optimzer: Adam3, augmentation: default
+image size: 32, batch size: 32, kernel size: 3, dataset size: 2211
+run time: 912.15s, plots/plot5.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.99      0.98      0.99       209
+without_mask       0.98      0.99      0.99       234
+
+    accuracy                           0.99       443
+   macro avg       0.99      0.99      0.99       443
+weighted avg       0.99      0.99      0.99       443
+
+[[205   4]
+ [  2 232]]
+
+
+build: 1601781455.525874 98.8713%
+model: Full_Net, epochs: 25, optimzer: Adam4, augmentation: default
+image size: 32, batch size: 32, kernel size: 3, dataset size: 2211
+run time: 431.00s, plots/plot6.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.99      0.99      0.99       209
+without_mask       0.99      0.99      0.99       234
+
+    accuracy                           0.99       443
+   macro avg       0.99      0.99      0.99       443
+weighted avg       0.99      0.99      0.99       443
+
+[[206   3]
+ [  2 232]]
+
+
+build: 1601781909.9098394 98.8713%
+model: Full_Net, epochs: 40, optimzer: Adam4, augmentation: default
+image size: 32, batch size: 32, kernel size: 3, dataset size: 2211
+run time: 560.85s, plots/plot6.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       1.00      0.98      0.99       209
+without_mask       0.98      1.00      0.99       234
+
+    accuracy                           0.99       443
+   macro avg       0.99      0.99      0.99       443
+weighted avg       0.99      0.99      0.99       443
+
+[[205   4]
+ [  1 233]]
+
+
+
+** Beginning auto_train.sh on Sun Oct  4 12:34:27 AKDT 2020
+
+build: 1601843670.601707 98.4199%
+model: Full_Net, epochs: 30, optimzer: Adam3, augmentation: default
+image size: 32, batch size: 32, kernel size: 3, dataset size: 2211
+run time: 401.66s, plots/plot0.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.99      0.98      0.98       209
+without_mask       0.98      0.99      0.99       234
+
+    accuracy                           0.98       443
+   macro avg       0.98      0.98      0.98       443
+weighted avg       0.98      0.98      0.98       443
+
+[[204   5]
+ [  2 232]]
+
+
+build: 1601844077.1523023 98.6456%
+model: Full_Net, epochs: 30, optimzer: Adam4, augmentation: default
+image size: 32, batch size: 32, kernel size: 3, dataset size: 2211
+run time: 406.08s, plots/plot1.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       1.00      0.98      0.99       209
+without_mask       0.98      1.00      0.99       234
+
+    accuracy                           0.99       443
+   macro avg       0.99      0.99      0.99       443
+weighted avg       0.99      0.99      0.99       443
+
+[[204   5]
+ [  1 233]]
+
+
+build: 1601844488.1273713 98.1941%
+model: Full_Net, epochs: 30, optimzer: Adam3, augmentation: default
+image size: 32, batch size: 48, kernel size: 3, dataset size: 2211
+run time: 388.00s, plots/plot2.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       1.00      0.97      0.98       209
+without_mask       0.97      1.00      0.98       234
+
+    accuracy                           0.98       443
+   macro avg       0.98      0.98      0.98       443
+weighted avg       0.98      0.98      0.98       443
+
+[[202   7]
+ [  1 233]]
+
+
+build: 1601844881.2709646 98.4199%
+model: Full_Net, epochs: 30, optimzer: Adam4, augmentation: default
+image size: 32, batch size: 48, kernel size: 3, dataset size: 2211
+run time: 389.25s, plots/plot3.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       1.00      0.97      0.98       209
+without_mask       0.97      1.00      0.99       234
+
+    accuracy                           0.98       443
+   macro avg       0.98      0.98      0.98       443
+weighted avg       0.98      0.98      0.98       443
+
+[[203   6]
+ [  1 233]]
+
+
+build: 1601845275.420785 98.8713%
+model: Full_Net, epochs: 30, optimzer: Adam3, augmentation: default
+image size: 48, batch size: 32, kernel size: 3, dataset size: 2211
+run time: 827.84s, plots/plot4.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.99      0.99      0.99       209
+without_mask       0.99      0.99      0.99       234
+
+    accuracy                           0.99       443
+   macro avg       0.99      0.99      0.99       443
+weighted avg       0.99      0.99      0.99       443
+
+[[206   3]
+ [  2 232]]
+
+
+build: 1601846109.2633152 98.6456%
+model: Full_Net, epochs: 30, optimzer: Adam4, augmentation: default
+image size: 48, batch size: 32, kernel size: 3, dataset size: 2211
+run time: 869.69s, plots/plot5.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.99      0.98      0.99       209
+without_mask       0.98      0.99      0.99       234
+
+    accuracy                           0.99       443
+   macro avg       0.99      0.99      0.99       443
+weighted avg       0.99      0.99      0.99       443
+
+[[205   4]
+ [  2 232]]
+
+
+build: 1601846985.8195977 97.9684%
+model: Full_Net, epochs: 30, optimzer: Adam3, augmentation: default
+image size: 48, batch size: 48, kernel size: 3, dataset size: 2211
+run time: 826.71s, plots/plot6.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.98      0.98      0.98       209
+without_mask       0.98      0.98      0.98       234
+
+    accuracy                           0.98       443
+   macro avg       0.98      0.98      0.98       443
+weighted avg       0.98      0.98      0.98       443
+
+[[204   5]
+ [  4 230]]
+
+
+build: 1601847819.5991209 98.8713%
+model: Full_Net, epochs: 30, optimzer: Adam4, augmentation: default
+image size: 48, batch size: 48, kernel size: 3, dataset size: 2211
+run time: 809.25s, plots/plot7.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.99      0.99      0.99       209
+without_mask       0.99      0.99      0.99       234
+
+    accuracy                           0.99       443
+   macro avg       0.99      0.99      0.99       443
+weighted avg       0.99      0.99      0.99       443
+
+[[206   3]
+ [  2 232]]
+
+
+Finished auto_train.sh
+1601847819.5991209 98.8713%
+1601845275.420785 98.8713%
+1601846109.2633152 98.6456%
+1601844077.1523023 98.6456%
+1601844881.2709646 98.4199%
+
+
+
+
+** Beginning auto_train.sh on Sun Oct  4 14:07:27 AKDT 2020
+
+build: 1601849250.656853 97.9684%
+model: Full_Net, epochs: 30, optimzer: Adam1, augmentation: default
+image size: 48, batch size: 32, kernel size: 3, dataset size: 2211
+run time: 825.68s, plots/plot0.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       1.00      0.96      0.98       209
+without_mask       0.97      1.00      0.98       234
+
+    accuracy                           0.98       443
+   macro avg       0.98      0.98      0.98       443
+weighted avg       0.98      0.98      0.98       443
+
+[[201   8]
+ [  1 233]]
+
+
+build: 1601850082.492366 98.4199%
+model: Full_Net, epochs: 30, optimzer: Adam2, augmentation: default
+image size: 48, batch size: 32, kernel size: 3, dataset size: 2211
+run time: 838.52s, plots/plot1.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       1.00      0.97      0.98       209
+without_mask       0.97      1.00      0.99       234
+
+    accuracy                           0.98       443
+   macro avg       0.98      0.98      0.98       443
+weighted avg       0.98      0.98      0.98       443
+
+[[203   6]
+ [  1 233]]
+
+
+build: 1601850927.3596334 98.8713%
+model: Full_Net, epochs: 30, optimzer: Adam1, augmentation: default
+image size: 48, batch size: 48, kernel size: 3, dataset size: 2211
+run time: 886.40s, plots/plot2.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       1.00      0.98      0.99       209
+without_mask       0.98      1.00      0.99       234
+
+    accuracy                           0.99       443
+   macro avg       0.99      0.99      0.99       443
+weighted avg       0.99      0.99      0.99       443
+
+[[205   4]
+ [  1 233]]
+
+
+build: 1601851819.7958896 98.6456%
+model: Full_Net, epochs: 30, optimzer: Adam2, augmentation: default
+image size: 48, batch size: 48, kernel size: 3, dataset size: 2211
+run time: 852.83s, plots/plot3.png
+notes: (none) 
+
+              precision    recall  f1-score   support
+
+        mask       0.99      0.99      0.99       209
+without_mask       0.99      0.99      0.99       234
+
+    accuracy                           0.99       443
+   macro avg       0.99      0.99      0.99       443
+weighted avg       0.99      0.99      0.99       443
+
+[[206   3]
+ [  3 231]]
+
+
+Finished auto_train.sh
+1601850927.3596334 98.8713%
+1601847819.5991209 98.8713%
+1601845275.420785 98.8713%
+1601851819.7958896 98.6456%
+1601846109.2633152 98.6456%
+
+
