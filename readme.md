@@ -34,7 +34,7 @@ You can say that a model comes out to ~99% accuracy based on training metrics, b
 
 ### Computer Vision:
 
-The goal of the project was to detect whether a person is wearing a face mask in real time video, and calculate the mask usage for the duration of the stream.
+The goal of the project was to detect whether a person is wearing a face mask real time video, and calculate the mask usage for the duration of the stream.
 
 - #### Part 1, detect and classify:
 
@@ -42,7 +42,7 @@ This is the easy part. It's just a script that loads an input video stream. Then
 
 - #### Part 2, tracking:
 
-This is the hard part. If you want to count how many masks you have detected, you can't just start counting, because every frame in the stream is like a new image, so for example one person in a hundred frames gets counted as one hundred people. Or if you just count by how many are detected on a per frame basis, that total goes to zero when they step out of view.
+This is the hard part. If you want to count how many masks you have detected, you can't just start counting, because every frame in the stream is like a new image, so for example one person in a hundred frames gets counted as one hundred people, and when they step away there are a total of zero people.
 
 So you have to use object tracking. When you detect a face, add it to a list of trackers, and update its location from frame to frame. And of course, make the prediction - mask our without mask - and add up the counts of each.
 
@@ -54,15 +54,15 @@ When you first detect a face, don't make the mask prediction on the first frame.
 
 You only need to attempt detecting faces every few frames, but still need to update the trackers locations every frame.
 
-If a person removes or puts on a mask, you need to know about it. So for every detected face that is being tracked and already has a classification, attempt to reclassify every ~128, and only change if it's a strong probability.
+If a person removes or puts on a mask, you need to know about it. So for every detected face that already has a classification, attempt to reclassify every ~128 frames or so, and only change if it's a strong probability.
 
 If the trackers have lost track of a face for about ~32 frames, then this person has left the frame and this one can be removed from the trackers. In case a reclassification was about to happen, do not attempt if the trackers have not detected movement over the last ~16 frames.
 
 - #### More testing
 
-After calibrating everything just right, I wanted to do more testing for the models. So I collected videos - I screen recorded a lot of clips. And then manually labeled the expected number of detected masks, the number without masks detected, and the final usage percentage for each video. Then I let another script run and save the output for each video, and then check the results against the expected output for the whole batch. I was able to get a better idea of the accuracy, and test out different models again, and was able to choose the best.
+After calibrating everything just right, I wanted to do more testing for the models. So I collected videos - I screen recorded a lot of clips. And then manually labeled the expected number of detected masks, the number without masks detected, and the final usage percentage for each video. Then I just let another script to run and save the output for each video, and then check the results against the expected output for the whole batch. I was able to get a better idea of the accuracy, and test out different models again, and was able to choose the best.
 
 ### WebApp
 
-Pretty much the same thing, but implemented with different tools for deploying the models and playing the video stream in a client browser. I am currently re-doing this from scratch on my own.
+Pretty much the same thing, but implemented with different tools for deploying the models and playing the video stream in a client browser. I am currently re-doing this on my own.
 
