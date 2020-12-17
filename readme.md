@@ -1,12 +1,14 @@
-This was for a web application project for my software engineering course in fall semester 2020. All projects had to be covid related, so I wanted to detect face masks in video and build an app for that.
+This was for a web application project for my software engineering course in fall semester 2020. All projects had to be covid related, so I wanted to detect face masks in video and build an app for that. The idea is to detect masks in real time video, and report the mask usage for the duration of the stream.
 
-```machine_learning``` is all of my own original work that I have been doing. It's the machine learning that powers the app and the backend computer vision for testing it out and getting everything to work.
+```machine_learning``` is all of my own original work that I have been doing. It's the main machine learning project behind the app and the backend computer vision for testing it out and getting everything to work.
 
 ```web_app``` is starting over from scratch with my own work. It is just the front end for a lightweight video based web app.
 
+<br>
 
 ![alt text](https://raw.githubusercontent.com/tjbergstrom/SWE/master/web_app/webapp/assets/demo.png)
 
+<br>
 
 ## How it works:
 
@@ -16,11 +18,11 @@ Make a prediction: is a person wearing a face mask or not? Train a model with a 
 
 - #### Data collection:
 
-I manually collected thousands of images of people wearing face masks, and not wearing masks. I only skimmed from two datasets that I could find, but they were not good quality had some bias.
+I manually collected thousands of images of people wearing face masks, and not wearing masks. I only skimmed from two datasets that I could find, but they were not good quality and had some bias.
 
 - #### Data processing:
 
-I have a really great processing pipeline with the help of some scripts. The data is cleaned up, bad files are rejected, filepaths are renamed, and so on. There's also a script to find and remove duplicate images (by calculating hashes), and some other cool stuff.
+I have a really great processing pipeline with some scripts. The data gets cleaned up, bad files are rejected, filepaths are renamed, and so on. There's also a script to find and remove duplicate images (by calculating hashes), and some other cool stuff.
 
 Then another script uses face detection to extract all faces from all images and saves them into a processed directory. Next, you need to go through this directory and manually remove images that were false positives (because face detection doesn't always get the face cropped exactly). There's another script to help find the originals so you can process them manually later. Also, images that did not detect any faces (by the face detection cropping script) are saved for manually processing later.
 
@@ -34,11 +36,11 @@ I have another great training pipeline. I use scripts to build many models with 
 
 - #### Testing
 
-You can say that a model comes out to ~99% accuracy based on training metrics, but how good is it on video for the intended use case? First I had to actually deploy the models in video, as described below.
+You can say that a model comes out to ~99% accuracy based on training metrics, but how good is it on video for the intended use? First I had to actually deploy the models in video, as described below.
 
 ### Computer Vision:
 
-The goal of the project was to detect whether a person is wearing a face mask real time video, and calculate the mask usage for the duration of the stream.
+The goal of the project was to detect whether a person is wearing a face mask in real time video, and calculate the mask usage for the duration of the stream.
 
 - #### Part 1, detect and classify:
 
@@ -46,7 +48,7 @@ This is the easy part. It's just a script that loads an input video stream. Then
 
 - #### Part 2, tracking:
 
-This is the hard part. If you want to count how many masks you have detected, you can't just start counting, because every frame in the stream is like a new image, so for example one person in a hundred frames gets counted as one hundred people, and when they step away there are a total of zero people.
+This is the hard part. If you want to count how many masks you have detected, you can't just start counting, because every frame in the stream is like a new image, so for example one person in a hundred frames gets counted as one hundred people, and when they step away there are a total of zero people counted in the current frame.
 
 So you have to use object tracking. When you detect a face, add it to a list of trackers, and update its location from frame to frame. And of course, make the prediction - mask our without mask - and add up the counts of each.
 
@@ -68,5 +70,5 @@ After calibrating everything just right, I wanted to do more testing for the mod
 
 ### WebApp
 
-Pretty much the same thing, but implemented with different tools for deploying the models and playing the video stream in a client browser. I am currently re-doing this on my own.
+Pretty much the same thing, but implemented with different tools for deploying the models and playing the video stream in a client browser. I am currently re-doing this on my own. One difference is using pose detection to better track the location of faces across frames.
 
