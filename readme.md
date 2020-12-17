@@ -4,6 +4,10 @@ This was for a web application project for my software engineering course in fal
 
 ```web_app``` is starting over from scratch with my own work. It is just the front end for a lightweight video based web app.
 
+
+![alt text](https://raw.githubusercontent.com/tjbergstrom/SWE/master/web_app/webapp/assets/demo.png)
+
+
 ## How it works:
 
 ### Machine Learning:
