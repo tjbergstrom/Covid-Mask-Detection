@@ -9,7 +9,7 @@ The following is a brief overview of my machine learning and computer vision pro
 
 <br>
 
-![alt text](https://raw.githubusercontent.com/tjbergstrom/SWE/master/web_app/webapp/assets/demo.png)
+![alt text](https://raw.githubusercontent.com/tjbergstrom/Covid-Mask-Detection/master/machine_learning/data/demo.png)
 
 <br>
 
