@@ -1,8 +1,11 @@
-This was for a web application project for my software engineering course in fall semester 2020. All projects had to be covid related, so I wanted to detect face masks in video and build an app for that. The idea is to detect masks in real time video, and report the mask usage for the duration of the stream.
+This was for a software engineering course project in fall semester 2020. All projects had to be covid related, so I wanted to detect face masks in video and build an app for that. The idea is to detect masks in real time video, and report the mask usage for the duration of the stream. For example, you can upload a webcam stream at the front entrance of a building, and get an estimate of mask usage there.
 
-```machine_learning``` is all of my own original work that I have been doing. It's the main machine learning project behind the app and the backend computer vision for testing it out and getting everything to work.
+The ```machine_learning/``` directory is all of my own original work that I have been doing. It's the machine learning project and the backend computer vision for testing it out and getting everything to work.
 
-```web_app``` is starting over from scratch with my own work. It is just the front end for a lightweight video based web app.
+The model that I built has been deployed in the web application, found at
+[https://github.com/tjbergstrom/facemask-detection-app](https://)
+
+The following is a brief overview of my machine learning and computer vision project.
 
 <br>
 
@@ -70,5 +73,5 @@ After calibrating everything just right, I wanted to do more testing for the mod
 
 ### WebApp
 
-Pretty much the same thing, but implemented with different tools for deploying the models and playing the video stream in a client browser. I am currently re-doing this on my own. One difference is using pose detection to better track the location of faces across frames.
+The web app development is split into another repository. It's a slightly different project. It uses the same models, but uses different tools to deploy them and stream the video in a client browser. One additional difference is that the web app implementation uses pose detection to better track the location of faces across frames.
 
