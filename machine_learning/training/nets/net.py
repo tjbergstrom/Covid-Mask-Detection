@@ -18,7 +18,7 @@ from keras.layers.core import Dense
 from keras import backend as K
 
 
-# This is a lightweight net for testing builds and datasets more quickly
+# A lightweight net for testing builds and datasets more quickly
 class Quick_Net:
 
 	@staticmethod
@@ -29,21 +29,18 @@ class Quick_Net:
 
 		model = Sequential()
 
-		# first set of convolutional layers
 		model.add(Conv2D(32, (kernel, kernel), padding="same", input_shape=input_shape))
 		model.add(Activation("relu"))
 		model.add(AveragePooling2D(pool_size=(2, 2), strides=(2, 2)))
 		model.add(Dropout(0.1))
 
-		# second set of convolutional layers
 		model.add(Conv2D(64, (kernel, kernel), padding="same"))
 		model.add(Activation("relu"))
 		model.add(AveragePooling2D(pool_size=(2, 2), strides=(2, 2)))
 		model.add(Dropout(0.1))
 
-		# only set of fully connected relu layers
 		model.add(Flatten())
-		model.add(Dense(500))
+		model.add(Dense(512))
 		model.add(Activation("relu"))
 
 		model.add(Dense(classes))
@@ -53,7 +50,7 @@ class Quick_Net:
 
 
 
-# This is a deeper bigger net for when you are prepared to wait a while
+# A deeper bigger net for when you are prepared to wait a while
 class Full_Net:
 
 	@staticmethod
@@ -64,33 +61,33 @@ class Full_Net:
 
 		model = Sequential()
 
-		# first set of convolutional layers
+		# First set of convolutional layers
 		model.add(Conv2D(32, (kernel, kernel), padding="same", input_shape=input_shape))
 		model.add(Activation("relu"))
 		model.add(MaxPooling2D(pool_size=(2, 2), strides=(2, 2)))
 		model.add(Dropout(0.2))
 
-		# second set of convolutional layers
+		# Second set of convolutional layers
 		model.add(Conv2D(64, (kernel, kernel), padding="same"))
 		model.add(Activation("relu"))
 		model.add(MaxPooling2D(pool_size=(2, 2), strides=(2, 2)))
 		model.add(Dropout(0.2))
 
-		# third set of convolutional layers
+		# Third set of convolutional layers
 		model.add(Conv2D(128, (kernel, kernel), padding="same"))
 		model.add(Activation("relu"))
 		model.add(MaxPooling2D(pool_size=(2, 2), strides=(2, 2)))
 		model.add(Dropout(0.2))
 
-		# fourth set of convolutional layers
+		# Fourth set of convolutional layers
 		model.add(Conv2D(264, (kernel, kernel), padding="same"))
 		model.add(Activation("relu"))
 		model.add(MaxPooling2D(pool_size=(2, 2), strides=(2, 2)))
 		model.add(Dropout(0.2))
 
-		# only set of fully connected relu layers
+		# The only fully connected layers
 		model.add(Flatten())
-		model.add(Dense(500))
+		model.add(Dense(512))
 		model.add(Activation("relu"))
 
 		model.add(Dense(classes))
@@ -100,6 +97,7 @@ class Full_Net:
 
 
 
+# A custom head on a MobileNet base, never really used it
 class Mobile_Net:
 
 	try:
@@ -115,14 +113,12 @@ class Mobile_Net:
 		if K.image_data_format() == "channels_first":
 				input_shape = (depth, height, width)
 
-		# Load MobileNet as the base
 		base = mobilenet_v2(
 			weights="imagenet",
 			include_top=False,
 			input_tensor=Input(shape=input_shape)
 		)
 
-		# Add a custom head to the base with project-specific output classes
 		head = base.output
 		head = AveragePooling2D(pool_size=(7, 7))(head)
 		head = Flatten(name="flatten")(head)
