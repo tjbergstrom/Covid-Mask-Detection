@@ -74,3 +74,12 @@ After calibrating everything just right, I wanted to do more testing for the mod
 
 The web app development is split into another repository. It's a slightly different project. It uses the same models, but uses different tools to deploy them and stream the video in a client browser. One additional difference is that the web app implementation uses pose detection to better track the location of faces across frames.
 
+<br>
+
+![alt text](https://raw.githubusercontent.com/tjbergstrom/Covid-Mask-Detection/master/machine_learning/data/demo.gif)
+
+*Detection and tracking/counting in action!*
+
+<br>
+
+<br>
