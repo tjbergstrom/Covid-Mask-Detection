@@ -2,8 +2,7 @@ This was for a software engineering course project in fall semester 2020. All pr
 
 The ```machine_learning/``` directory is all of my own original work that I have been doing. It's the machine learning project and the backend computer vision for testing it out and getting everything to work.
 
-The model that I built has been deployed in the web application, found at
-[https://github.com/tjbergstrom/facemask-detection-app](https://)
+The model that I built has also been deployed in the web application, found [here](https://github.com/tjbergstrom/facemask-detection-app)
 
 The following is a brief overview of my machine learning and computer vision project.
 
