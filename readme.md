@@ -2,7 +2,7 @@ This was for a software engineering course project in fall semester 2020. All pr
 
 The ```machine_learning/``` directory is all of my own original work that I have been doing. It's the machine learning project and the backend computer vision for testing it out and getting everything to work.
 
-The model that I built has also been deployed in the web application, found [here](https://github.com/tjbergstrom/facemask-detection-app)
+The model that I built has also been deployed in the web application, found [here](https://github.com/tjbergstrom/facemask-detection-app).
 
 The following is a brief overview of my machine learning and computer vision project.
 
@@ -13,6 +13,10 @@ The following is a brief overview of my machine learning and computer vision pro
 <br>
 
 ## How it works:
+
+### Tools:
+
+Python, Keras, OpenCV, Dlib.
 
 ### Machine Learning:
 
@@ -34,7 +38,7 @@ I tried out building different models with different levels of lower quality pro
 
 - #### Training
 
-I have another great training pipeline. I use scripts to build many models with different combinations of hypertunings, such as epochs, batch sizes, image sizes, learning rates, and so much more. After training for a few days I can pick out the best models, but I usually know pretty quickly what parameters are the best.
+I have another great training pipeline. My favorite model is a five layer convolutional neural network. I use scripts to build many models with different combinations of hypertunings, such as epochs, batch sizes, image sizes, learning rates, and more. After training for a few days I can pick out the best models, but I usually know pretty quickly what parameters are the best.
 
 - #### Testing
 
@@ -78,7 +82,7 @@ The web app development is split into another repository. It's a slightly differ
 
 ![alt text](https://raw.githubusercontent.com/tjbergstrom/Covid-Mask-Detection/master/machine_learning/data/demo.gif)
 
-*Detection and tracking/counting in action!*
+*Detection with tracking/counting!*
 
 <br>
 
