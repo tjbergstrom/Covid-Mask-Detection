@@ -72,7 +72,7 @@ If the trackers have lost track of a face for about ~32 frames, then this person
 
 - #### More testing
 
-After calibrating everything just right, I wanted to do more testing for the models. So I collected videos - I screen recorded a lot of clips. And then manually labeled the expected number of detected masks, the number without masks detected, and the final usage percentage for each video. Then I just let another script to run and save the output for each video, and then check the results against the expected output for the whole batch. I was able to get a better idea of the accuracy, and test out different models again, and was able to choose the best.
+After calibrating everything just right, I wanted to do more testing for the models. So I collected videos - I screen recorded a lot of clips. And then manually labeled the expected number of detected masks, the number without masks detected, and the final usage percentage for each video. Then I just let another script run and save the output for each video, and then check the results against the expected output for the whole batch. I was able to get a better idea of the accuracy on actual video, and compare different models again, and was able to choose the best.
 
 ### WebApp
 
