@@ -1,16 +1,18 @@
-This was for a software engineering course project in fall semester 2020. All projects had to be covid related, so I wanted to detect face masks in video and build an app for that. The idea is to detect masks in real time video, and report the mask usage for the duration of the stream. For example, you can upload a webcam stream at the front entrance of a building, and get an estimate of mask usage there.
+This was for a software engineering course project in fall semester 2020. All projects had to be covid related, so I suggested detecting face masks in video and developing an app for that. The idea is to detect masks in real time video, and report the mask usage for the duration of the stream.
 
-The ```machine_learning/``` directory is all of my own original work that I have been doing. It's the machine learning project and the backend computer vision for testing it out and getting everything to work.
+The ```machine_learning/``` directory is all of my own original work that I have been doing. It's the machine learning project to classify if a person is wearing a mask, and the computer vision for developing the system to detect and track mask usage in video with testing to evaluate and adjust performance.
 
 The model that I built has also been deployed in the web application, found [here](https://github.com/tjbergstrom/facemask-detection-app).
 
 The following is a brief overview of my machine learning and computer vision project.
 
-<br>
+<br><br>
 
-![alt text](https://raw.githubusercontent.com/tjbergstrom/Covid-Mask-Detection/master/machine_learning/data/demo.png)
+![alt text](https://raw.githubusercontent.com/tjbergstrom/Covid-Mask-Detection/master/machine_learning/data/demo.gif)
 
-<br>
+*Detection with tracking/counting!*
+
+<br><br>
 
 ## How it works:
 
@@ -60,7 +62,7 @@ So you have to use object tracking. When you detect a face, add it to a list of 
 
 - #### Testing
 
-I had to spend a lot of time with a webcam seeing how it works and "calibrating" everything just right. Here are some of the more interesting notes.
+I had to spend a lot of time with a webcam seeing how it works and calibrating everything just right. Here are some of the more interesting notes.
 
 When you first detect a face, don't make the mask prediction on the first frame. It might not be the best angle or something, so wait for 16 frames to go by. If it was a false positive and not even a face, then you will know that the trackers haven't updated a location change for the last ~8 frames, so reject and do not classify.
 
@@ -80,10 +82,5 @@ The web app development is split into another repository. It's a slightly differ
 
 <br>
 
-![alt text](https://raw.githubusercontent.com/tjbergstrom/Covid-Mask-Detection/master/machine_learning/data/demo.gif)
-
-*Detection with tracking/counting!*
-
 <br>
 
-<br>
